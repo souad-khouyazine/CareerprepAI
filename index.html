@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CareerPrep AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>CareerPrep AI</h1>
+  <p>Your AI assistant for CV & Interview preparation</p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>CV Generator</h3>
+      <p>Create a professional CV with AI</p>
+      <button id="cvBtn">Start</button>
+    </div>
+    <div class="card">
+      <h3>Interview Coach</h3>
+      <p>Practice interviews with AI</p>
+      <button id="interviewBtn">Start</button>
+    </div>
+  </div>
+
+  <!-- CV Form -->
+  <div id="cvForm" style="display:none; margin-top: 30px;">
+    <h3>Enter your information</h3>
+    <form id="form">
+      <input type="text" id="name" placeholder="Full Name" required><br><br>
+      <input type="email" id="email" placeholder="Email" required><br><br>
+      <textarea id="experience" placeholder="Your Experience" rows="4" required></textarea><br><br>
+      <button type="submit">Generate CV</button>
+    </form>
+    <div id="cvOutput" style="margin-top:20px; white-space: pre-wrap;"></div>
+  </div>
+
+  <!-- Interview Coach Form -->
+  <div id="interviewForm" style="display:none; margin-top: 30px;">
+    <h3>Practice Interview</h3>
+    <form id="interview">
+      <input type="text" id="job" placeholder="Job Title" required><br><br>
+      <textarea id="answers" placeholder="Your answers or questions" rows="4" required></textarea><br><br>
+      <button type="submit">Get Feedback</button>
+    </form>
+    <div id="interviewOutput" style="margin-top:20px; white-space: pre-wrap;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
